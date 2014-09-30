@@ -15,6 +15,7 @@ ENV JDK_VERSION 7
 
 # install dev tools
 RUN apt-get update
+RUN apt-get upgrade
 RUN apt-get install -y apt-utils curl tar openssh-server openssh-client rsync vim lsof iptables telnet
 
 # passwordless ssh
